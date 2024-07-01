@@ -51,11 +51,12 @@ Import the SQL file located at /path/to/xampp/htdocs/job-application-portal/db/j
 Open config.php file in the project directory.
 
 **Update the database credentials as needed:**
-<?php
+
+
 $servername = "localhost";
 $username = "root"; // default XAMPP username
 $password = ""; // default XAMPP password
 $dbname = "job_portal";
-?>
+
 
 

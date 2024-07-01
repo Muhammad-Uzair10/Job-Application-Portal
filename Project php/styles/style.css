@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins&family=Roboto+Mono&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #030406;
+    --padding-inline-selection: 20px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-text-color);
+    background-color: #c2e3dc;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.small-bold-text {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.container {
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-selection);
+}
+
+  
+.flex {
+    display: flex;
+    align-items: center;
+}
+fieldset {
+  padding:35px 30px 40px 70px;
+}
+
+.hover-link {
+    color: var(--primary-text-color);
+    transition: 0.2s ease-out;
+}
+
+.hover-link:hover {
+    color: var(--accent-color);
+}
+
+.primary-button {
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: white !important;
+    padding: 8px 20px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+}
+
+.primary-button:hover {
+    background-color: var(--accent-color-dark);
+}
+
+.container main-nav flex{
+    background-color: #c2e3dc;
+    height: 120px;
+}
+.secondary-button {
+    border: 0.5px solid var(--secondary-text-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: var(--primary-text-color) !important;
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+}
+
+.secondary-button:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color) !important;
+}
+
+.top-banner {
+    background-color: #fff;
+    background-size: 205px;
+}
+.top-banner p {
+    font-size: 30px;
+    color: var(--primary-text-color);
+}
+
+.banner-text {
+    color: var(--primary-text-color);
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+.main-nav {
+    padding: 0px; /* Set the desired padding value */
+    
+    justify-content: space-between;
+    background-color: #c2e3dc;
+}
+
+.nav-links ul {
+    justify-content: end;
+    gap: 30px;
+    list-style-type: none;
+}
+.nav-toggle {
+    display: none;
+}
+
+.nav-links {
+    flex-basis: 730px;
+    padding-top: 10px;
+}
+
+.container-2 {
+    text-align: center;
+}
+
+.company-logo img{
+    max-width:200px;
+    max-height: 150px;
+    margin-bottom: 10px;
+}
+
+.hero-img img{
+    width:1100px;
+    height: 500px;
+}
+.hero-text {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 20px; /* Adjust horizontal position */
+    transform: translateY(-50%); /* Center vertically */
+    color: #183b56; /* Assuming you want white text */
+    text-align: left; /* Align text to the left */
+    width: 40%; /* Adjust width as needed */
+    
+  }
+
+  .hero-text2 {
+    color: #183b56;
+    position: absolute;
+    top: 60%;
+    left: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    width: 40%;
+    background-color: #b9cada;
+    text-align: center; /* Center the text horizontally */
+}
+
+/* Company Details Section Styling */
+.company-details {
+    background-color: #f5f5f5; /* Light gray background */
+    border: 10px solid #333; /* Border with subtle color */
+    padding: 40px; /* Padding for spacing */
+    
+  }
+  
+  .company-details h2 {
+    font-size: 28px; /* Larger heading size */
+    margin-bottom: 20px; /* Space after heading */
+  }
+  
+  .company-details p {
+    line-height: 1.5; /* Adjust line spacing for readability */
+  }
+  
+  .company-details .values-list {
+    list-style: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 20px 0; /* Space above and below list */
+  }
+  
+  .company-details .values-list li {
+    margin-bottom: 10px; /* Space between list items */
+  }
+  
+  .company-details .values-list li:before {
+    content: "•"; /* Add a decorative bullet point */
+    margin-right: 10px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+/* CEO Message Section Styling */
+.ceo-message {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between text and image */
+    align-items: center; /* Vertically centers the content */
+    padding: 40px 0; /* Padding for spacing */
+  }
+  
+  .ceo-content {
+    flex: 0 0 50%;  /* Allow content side to take up 50% of space */
+    margin-right: 30px; /* Space between text and image */
+    order: 1; /* Move content to the right (order 1) */
+  }
+  
+  .ceo-content p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .flip-container {
+    perspective: 1000px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.flip-container,
+.front,
+.back {
+    width: 200px;
+    height: 300px; /* Iincrease height of flipin imd*/
+}
+
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.front,
+.back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.front {
+    z-index: 2;
+    transform: rotateY(0deg);
+    background-color: #4fb3d4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.front h3 {
+    color: white;
+    margin-top: 10px;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.flip-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.our-products {
+    text-align: center;
+}
+.product-1-back{
+    height:300px;
+
+} 
+
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #D3B683; /* Creates contrast */
+    padding: 60px 0;
+    text-align: center;
+}
+
+.testimonials h2 {
+    color: black; /* Dark Blue */
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.testimonial {
+    background-color: #c2e3dc; /* Light background */
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Adds depth */
+    border-radius: 5px;
+}
+
+.testimonial p {
+    color: #333; /* Dark text for readability */
+    font-size: 1.1rem;
+}
+
+.client-info {
+    margin-top: 20px;
+}
+
+.client-name { 
+    font-weight: 600; 
+    color: #2294ed; /* Eye-catching accent color */
+}
+
+.client-title {
+    color: #777;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #a0c9c4; /* A darker shade of #c2e3dc */
+    padding: 30px 0;
+    color: #fff; /* White text for contrast */
+    text-align: center;
+}
+
+/* Optional: Styling for footer navigation */
+.footer-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.footer-nav a {
+    color: #fff; /* White footer links */
+    text-decoration: none;
+}
+
+.group-photo {
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+.photo-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+}
+
+.individual-photo {
+    width: 210px; /* Adjust as needed */
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.group-info {
+    margin-left: 20px;
+}
+/* Timetable Styles */
+.timetable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.timetable th,
+.timetable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.timetable th {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+/* Timetable Course Colors */
+.COS10026 {
+    background-color: #FFC0CB; /* colour*/
+}
+
+.COS10009 {
+    background-color: #ADD8E6;  /* colour*/
+}
+
+.COS10004 {
+    background-color: #E6E6FA;  /* colour*/
+}
+
+.TNE10005 {
+    background-color: #FFFACD;  /* colour*/
+}
+
+.timetable th,
+.timetable td {
+    width: 14.28%; /* Equally divides the table into seven columns  */
+}
+.timetable td {
+    min-height: 50px; 
+}
+
+.email-button {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: white;
+    text-align: center;
+    padding: 20px 40px; /* Increased for a larger email button */
+    font-size: 1.5rem; /* Larger font size for the button text */
+    border-radius: 8px; /* Slightly larger border for a rounded effect */
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* More shadow for depth */
+    cursor: pointer; /* Changes the cursor to the pointer hand when hovering over the button */
+}
+
+.email-button:hover {
+    background-color: var(--accent-color-dark); /* Slightly darker shade on hover for feedback */
+}
+
+.youtube-vid {
+	width: 30%; 
+    margin: 0 auto; 
+    background-color: #808080; 
+    padding: 20px; 
+	text-align:center;
+	border-radius: 10px;
+	margin-bottom : 10px;
+	font-size: 30px; 
+}
+	
+.youtube-vid:hover {
+	background-color: var(--accent-color)
+}
+
+.applyimg {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
